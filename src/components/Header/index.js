@@ -14,7 +14,7 @@ class Title extends Component {
                         <br></br>
                         Some of you may know, but Michael actually quit his current job at the end of 2020 to devote to full-time study and portfolio development to transition into a career in Computer Science!
                         <br></br>
-                        It's going to be mostly self-study with some coaching from of his freinds who are currently in the industry. 
+                        It's going to be mostly self-study with some coaching from his freinds who are currently in the industry. 
                         <br></br>
                         This means Michael needs lots of encouragement and prayer. If you want to help him out, please say something nice here to encourage him and keep him in yo prayers.
                         <br></br>
