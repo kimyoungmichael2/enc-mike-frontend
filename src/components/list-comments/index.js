@@ -41,6 +41,7 @@ export default class ListComments extends Component {
     render() {
         return(
             <div>
+                <h3>List of encouragements:</h3>
                 <List divided relaxed>
                     { this.commentList() }
                 </List>

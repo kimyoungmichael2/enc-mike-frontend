@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import { Button, Form, TextArea } from 'semantic-ui-react'
+
 
 export default class CreateComments extends Component {
     constructor(props) {
@@ -46,7 +48,15 @@ export default class CreateComments extends Component {
         return (
         <div>
             <h3>Write an encouragement to Michael!</h3>
-            <form onSubmit={this.onSubmit}>
+            <Form onSubmit={this.onSubmit}>
+                <Form.TextArea
+                    label='Message'
+                    onChange={this.onChangeComment}
+                    required
+                    value={this.state.comment}
+                    type='text'
+                />
+                {/* <Form.Field>
                 <label>Message:</label>
                 <input 
                     type="text"
@@ -54,6 +64,8 @@ export default class CreateComments extends Component {
                     value={this.state.comment}
                     onChange={this.onChangeComment}
                 />
+                </Form.Field> */}
+                <Form.Field required>
                 <label>Signed by:</label>
                 <input 
                     type="text"
@@ -61,8 +73,9 @@ export default class CreateComments extends Component {
                     value={this.state.username}
                     onChange={this.onChangeUsername}
                 />
-                <input type="submit" value="Submit" />
-            </form>
+                </Form.Field>
+                <Button type="submit">Submit</Button>
+            </Form>
 
         </div>
         )
