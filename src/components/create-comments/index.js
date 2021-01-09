@@ -38,7 +38,7 @@ export default class CreateComments extends Component {
 
         console.log(comment)
 
-        axios.post('http://localhost:5000/comments/add', comment)
+        axios.post('http://michaelyoung.kim/api/comments/add', comment)
             .then(res => console.log(res.data));
 
         window.location = '/';

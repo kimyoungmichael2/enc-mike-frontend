@@ -20,7 +20,7 @@ export default class ListComments extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/comments/')
+        axios.get('http://michaelyoung.kim/api/comments/')
           .then(response => {
             this.setState({ comment: response.data })
             console.log(this.state.comment);
